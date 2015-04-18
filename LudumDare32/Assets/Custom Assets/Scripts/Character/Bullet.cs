@@ -4,6 +4,7 @@ using System.Collections;
 public class Bullet : MonoBehaviour {
 
     public float speed;
+    public const string ENEMY_TAG = "Enemy";
 
     // Use this for initialization
     void Start () {
@@ -22,15 +23,18 @@ public class Bullet : MonoBehaviour {
     }
 
     void OnTriggerEnter2D( Collider2D other) {
-        switch (other.gameObject.layer) {
-            case TimeManager.BOTH_LAYER :
-                other.gameObject.layer = TimeManager.PRESENT_LAYER; 
+        if(other.gameObject.tag != ENEMY_TAG) {
+            
+            switch (other.gameObject.layer) {
+                case TimeManager.BOTH_LAYER :
+                    other.gameObject.layer = TimeManager.PRESENT_LAYER; 
+                    break;
+                case TimeManager.PRESENT_LAYER :
+                    other.gameObject.layer = TimeManager.BOTH_LAYER;
+                    break;
+                default:
                 break;
-            case TimeManager.PRESENT_LAYER :
-                other.gameObject.layer = TimeManager.BOTH_LAYER;
-                break;
-            default:
-            break;
+            }
         }
 
         Destroy(gameObject);
