@@ -38,5 +38,6 @@ public class Gun : MonoBehaviour {
 
         bullet.transform.position = new Vector3(x,y,z);
         bullet.GetComponent<Bullet>().speed = bulletSpeed * sens;
+        bullet.layer = gameObject.layer;
     }
 }

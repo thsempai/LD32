@@ -20,4 +20,22 @@ public class Bullet : MonoBehaviour {
 
         transform.position = new Vector3(x,y,z);
     }
+
+    void OnTriggerEnter2D( Collider2D other) {
+        switch (other.gameObject.layer) {
+            case TimeManager.BOTH_LAYER :
+                other.gameObject.layer = TimeManager.PRESENT_LAYER; 
+                break;
+            case TimeManager.PRESENT_LAYER :
+                other.gameObject.layer = TimeManager.BOTH_LAYER;
+                break;
+            default:
+            break;
+        }
+
+        Destroy(gameObject);
+    }
+
 }
+
+

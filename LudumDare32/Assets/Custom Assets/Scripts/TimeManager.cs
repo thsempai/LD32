@@ -5,6 +5,7 @@ using System.Collections;
 public class TimeManager : MonoBehaviour {
 
     public const int PRESENT_LAYER = 9;
+    public const int BOTH_LAYER = 8;
     public const int PAST_LAYER = 10;
 
     public enum Time{
