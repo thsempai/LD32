@@ -27,6 +27,7 @@ GameObject:
   - 92: {fileID: 9200000}
   - 124: {fileID: 12400000}
   - 81: {fileID: 8100000}
+  - 114: {fileID: 11410352}
   m_Layer: 0
   m_Name: CameraBoth
   m_TagString: MainCamera
@@ -166,7 +167,7 @@ Camera:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 4
   m_BackGroundColor: {r: .625529051, g: .684091985, b: .776119411, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -179,7 +180,7 @@ Camera:
   field of view: 60
   orthographic: 1
   orthographic size: 6.03424501
-  m_Depth: -1
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 256
@@ -349,6 +350,23 @@ MonoBehaviour:
   visualiseInEditor: 1
   closestDistance: .5
   dontClipTag: Player
+--- !u!114 &11410352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d64b4f3a592f28b44bf19223ac8b6cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensity: 1
+  softness: 1
+  spread: 5
+  blurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
+  depthFetchShader: {fileID: 4800000, guid: 14768d3865b1342e3a861fbe19ba2db2, type: 3}
+  creaseApplyShader: {fileID: 4800000, guid: b59984d82af624bd3b0c777f038276f2, type: 3}
 --- !u!114 &11418988
 MonoBehaviour:
   m_ObjectHideFlags: 1
