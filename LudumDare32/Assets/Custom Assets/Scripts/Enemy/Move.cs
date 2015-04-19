@@ -58,6 +58,7 @@ public class Move : MonoBehaviour {
         y += sens.y *speed * Time.deltaTime;
 
         transform.position = new Vector3(x,y,z);
+        transform.localScale = new Vector3(sens.x, 1f, 1f);
 
         if(x < limitInf.x && sens.x < 0f || x > limitSup.x && sens.x > 0f) {
             sens.x *= -1f;
