@@ -10,9 +10,7 @@ GameObject:
   - 4: {fileID: 497280}
   - 212: {fileID: 21265246}
   - 68: {fileID: 6868266}
-  - 68: {fileID: 6840700}
-  - 68: {fileID: 6816946}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: tree 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,44 +24,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.31999969, y: .239999995, z: 0}
+  m_LocalPosition: {x: 19.5421581, y: .351628304, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1.20000005}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!68 &6816946
-EdgeCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114596}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-  - {x: -.607940674, y: 2.88087606}
-  - {x: -.364082336, y: 3.15941882}
-  - {x: .280414581, y: 3.1393857}
-  - {x: .671960831, y: 2.68881774}
---- !u!68 &6840700
-EdgeCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114596}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-  - {x: .768474579, y: -3.13695455}
-  - {x: .341791153, y: -2.474576}
-  - {x: .315099716, y: .905955076}
-  - {x: .723995209, y: 1.57613301}
-  - {x: .671960831, y: 2.68881679}
 --- !u!68 &6868266
 EdgeCollider2D:
   m_ObjectHideFlags: 1
@@ -76,8 +41,14 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   m_Points:
-  - {x: -.598695755, y: 2.92132092}
-  - {x: -.735666275, y: 2.64248085}
+  - {x: -.575258255, y: -3.10207701}
+  - {x: .447343826, y: -3.11514378}
+  - {x: .315437317, y: .86495018}
+  - {x: .712001801, y: 1.41863108}
+  - {x: .74492836, y: 2.64144301}
+  - {x: .265851974, y: 3.1822629}
+  - {x: -.374851227, y: 3.19995975}
+  - {x: -.759103775, y: 2.68935585}
   - {x: -.769792557, y: 1.03942513}
   - {x: -.548496246, y: .830327153}
   - {x: -.599149704, y: -3.05716705}

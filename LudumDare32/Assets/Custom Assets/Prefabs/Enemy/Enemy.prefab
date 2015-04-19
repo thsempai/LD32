@@ -12,6 +12,7 @@ GameObject:
   - 60: {fileID: 6045460}
   - 114: {fileID: 11462966}
   - 114: {fileID: 11480804}
+  - 95: {fileID: 9542078}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
@@ -44,11 +45,31 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: -.800000012, y: .800000012}
+    - - {x: -.612762451, y: .527646542}
+      - {x: -1.04873657, y: -.169065475}
+      - {x: -1.2425766, y: -.757067204}
       - {x: -.800000012, y: -.800000012}
       - {x: .75, y: -.800000012}
-      - {x: .800000012, y: -.75}
-      - {x: .800000012, y: .800000012}
+      - {x: 1.25959778, y: -.784044027}
+      - {x: 1.14134979, y: -.325431347}
+      - {x: .748931885, y: .680845499}
+--- !u!95 &9542078
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 168494}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7ede5aedb5ec38545a42f5e994d999d6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11462966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3369a658ccc889446b59ddc979d8752a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 2
   displacement: {x: 5, y: 0}
   limitInf: {x: 0, y: 0}
   limitSup: {x: 0, y: 0}
@@ -102,7 +123,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 60b0e7cd109ea5443b07c888f6ad036c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c8dff30d67c9c444c9aabf963e49f15b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

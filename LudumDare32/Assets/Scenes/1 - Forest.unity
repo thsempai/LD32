@@ -535,11 +535,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_JumpForce
-      value: 700
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_AirControl
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: m_MaxSpeed
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
@@ -633,7 +637,7 @@ Prefab:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 6840700, guid: da94d67e116ae204595ddc8bfb851da6, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_UsedByEffector
       value: 0
       objectReference: {fileID: 0}
@@ -641,7 +645,7 @@ Prefab:
       propertyPath: m_UsedByEffector
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6816946, guid: da94d67e116ae204595ddc8bfb851da6, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_UsedByEffector
       value: 1
       objectReference: {fileID: 0}
@@ -1590,6 +1594,10 @@ Prefab:
     - target: {fileID: 497280, guid: da94d67e116ae204595ddc8bfb851da6, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114596, guid: da94d67e116ae204595ddc8bfb851da6, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da94d67e116ae204595ddc8bfb851da6, type: 2}
