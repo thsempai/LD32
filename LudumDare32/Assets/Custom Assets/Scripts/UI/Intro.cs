@@ -11,7 +11,7 @@ public class Intro : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	if(GetComponent<Animator>().GetBool("end")) {
-        Application.LoadLevel(2);
+        Application.LoadLevel("1 - Forest");
     }
 	}
 }

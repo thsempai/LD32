@@ -10,6 +10,8 @@ public class Life : MonoBehaviour {
 
     public List<GameObject> hearts;
     public Vector2 damageVelocity = new Vector2();
+    public bool dead = false;
+    public float time = 0.5f;
 
     void Start () {
     
@@ -19,6 +21,12 @@ public class Life : MonoBehaviour {
     void Update () {
         for(int index = 0; index < hearts.Count; index ++) {
             hearts[index].SetActive(index < life);
+        }
+        if(dead) {
+            time -= Time.deltaTime;
+            if (time <=0f) {
+                Application.LoadLevel("GameOver");
+            }
         }
     }
 
@@ -37,6 +45,6 @@ public class Life : MonoBehaviour {
 
     public void Kill() {
         life = 0;
-        Destroy(gameObject);
+        dead = true;
     }
 }
