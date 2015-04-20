@@ -19,7 +19,6 @@ public class Damage : MonoBehaviour {
     }
 
     void OnTriggerEnter2D( Collider2D other) {
-        Debug.Log("Damage");
         if(other.gameObject.tag == PLAYER_TAG) {
             if(InstantKill) {
                 other.gameObject.GetComponent<Life>().Kill();

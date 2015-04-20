@@ -16,6 +16,10 @@ public class TimeManager : MonoBehaviour {
     public CameraManager cameraManager;
     public GameObject hero;
 
+    public AudioSource audio_present;
+    public AudioSource audio_past;
+    
+
     private Time _currentTime = Time.present;
 
     public Time currentTime{
@@ -31,6 +35,8 @@ public class TimeManager : MonoBehaviour {
         
         cameraManager.SetManager(this);
         hero.layer = PRESENT_LAYER;
+        audio_past.volume = 0f;
+        audio_present.volume = 1f;
 
     }
     
@@ -52,10 +58,14 @@ public class TimeManager : MonoBehaviour {
         switch(_currentTime) {
             case Time.present :
                 hero.layer = PRESENT_LAYER;
+                audio_past.volume = 0f;
+                audio_present.volume = 1f;
                 break;
                 
             case Time.past : 
                 hero.layer = PAST_LAYER;
+                audio_past.volume = 1f;
+                audio_present.volume = 0f;
                 break;
         }
 

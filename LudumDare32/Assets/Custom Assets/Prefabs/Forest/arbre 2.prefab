@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 404916}
   - 212: {fileID: 21269790}
-  - 68: {fileID: 6892728}
+  - 61: {fileID: 6126780}
   m_Layer: 10
   m_Name: arbre 2
   m_TagString: Untagged
@@ -29,8 +29,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!68 &6892728
-EdgeCollider2D:
+--- !u!61 &6126780
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -40,9 +40,8 @@ EdgeCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
-  m_Points:
-  - {x: -.010761261, y: -1.68413496}
-  - {x: -.118789673, y: .777293205}
+  serializedVersion: 2
+  m_Size: {x: 1.27999997, y: 5.11999989}
 --- !u!212 &21269790
 SpriteRenderer:
   m_ObjectHideFlags: 1
