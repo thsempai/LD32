@@ -24,6 +24,7 @@ public class Damage : MonoBehaviour {
                 other.gameObject.GetComponent<Life>().Kill();
             }
             else {
+                GetComponent<AudioSource>().Play();
                 other.gameObject.GetComponent<Life>().Damage(damage);
             }
             

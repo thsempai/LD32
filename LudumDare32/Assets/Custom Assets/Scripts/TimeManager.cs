@@ -58,6 +58,9 @@ public class TimeManager : MonoBehaviour {
                     currentTime = Time.present;
                 }
             }
+            else if (Input.GetKeyUp(KeyCode.Escape)) {
+                Application.LoadLevel("Title");
+            }
         }
         else {
             if(chrono <= 0f) {

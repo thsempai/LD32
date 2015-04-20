@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 46cfc8e2455934e4f9ec4ddc80a0cb4b
-timeCreated: 1429516730
+guid: b74259db429dc0d4dbf70eb09e08b342
+timeCreated: 1429553348
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: perso-shot25FPS_0
-    21300002: perso-shot25FPS_1
-    21300004: perso-shot25FPS_2
-    21300006: perso-shot25FPS_3
-    21300008: perso-shot25FPS_4
-    21300010: perso-shot25FPS_5
-    21300012: perso-shot25FPS_6
-    21300014: perso-shot25FPS_7
-    21300016: perso-shot25FPS_8
-    21300018: perso-shot25FPS_9
+    21300000: perso-shot25FPbis_0
+    21300002: perso-shot25FPbis_1
+    21300004: perso-shot25FPbis_2
+    21300006: perso-shot25FPbis_3
+    21300008: perso-shot25FPbis_4
+    21300010: perso-shot25FPbis_5
+    21300012: perso-shot25FPbis_6
+    21300014: perso-shot25FPbis_7
+    21300016: perso-shot25FPbis_8
+    21300018: perso-shot25FPbis_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -37,9 +37,9 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 4096
   textureSettings:
-    filterMode: 0
+    filterMode: 1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -59,7 +59,57 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: perso-shot25FPS_0
+    - name: perso-shot25FPbis_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: perso-shot25FPbis_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: perso-shot25FPbis_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: perso-shot25FPbis_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: perso-shot25FPbis_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: perso-shot25FPbis_5
       rect:
         serializedVersion: 2
         x: 0
@@ -69,7 +119,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: perso-shot25FPS_1
+    - name: perso-shot25FPbis_6
       rect:
         serializedVersion: 2
         x: 512
@@ -79,7 +129,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: perso-shot25FPS_2
+    - name: perso-shot25FPbis_7
       rect:
         serializedVersion: 2
         x: 1024
@@ -89,7 +139,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: perso-shot25FPS_3
+    - name: perso-shot25FPbis_8
       rect:
         serializedVersion: 2
         x: 1536
@@ -99,60 +149,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: perso-shot25FPS_4
+    - name: perso-shot25FPbis_9
       rect:
         serializedVersion: 2
         x: 2048
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: perso-shot25FPS_5
-      rect:
-        serializedVersion: 2
-        x: 2560
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: perso-shot25FPS_6
-      rect:
-        serializedVersion: 2
-        x: 3072
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: perso-shot25FPS_7
-      rect:
-        serializedVersion: 2
-        x: 3584
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: perso-shot25FPS_8
-      rect:
-        serializedVersion: 2
-        x: 4096
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: perso-shot25FPS_9
-      rect:
-        serializedVersion: 2
-        x: 4608
         y: 0
         width: 512
         height: 512
