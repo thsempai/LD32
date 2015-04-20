@@ -18,6 +18,10 @@ public class TimeManager : MonoBehaviour {
 
     public AudioSource audio_present;
     public AudioSource audio_past;
+
+    public bool free = false;
+
+    public float chrono = 0f;
     
 
     private Time _currentTime = Time.present;
@@ -32,9 +36,10 @@ public class TimeManager : MonoBehaviour {
     }
     // Use this for initialization
     void Start () {
-        
         cameraManager.SetManager(this);
-        hero.layer = PRESENT_LAYER;
+        chrono =  Random.Range(2f, 5f);
+        if(!free) hero.layer = PRESENT_LAYER;
+        currentTime =Time.present;
         audio_past.volume = 0f;
         audio_present.volume = 1f;
 
@@ -42,14 +47,30 @@ public class TimeManager : MonoBehaviour {
     
     // Update is called once per frame
     void Update () {
-    if (Input.GetKeyUp(KeyCode.B)) {
-        if(currentTime == Time.present) {
-            currentTime = Time.past;
+
+        if(!free) {
+            if (Input.GetKeyUp(KeyCode.B)) {
+                GetComponent<AudioSource>().Play();
+                if(currentTime == Time.present) {
+                    currentTime = Time.past;
+                }
+                else {
+                    currentTime = Time.present;
+                }
+            }
         }
         else {
-            currentTime = Time.present;
+            if(chrono <= 0f) {
+                chrono =  Random.Range(2f, 5f);
+                if(currentTime == Time.present) {
+                    currentTime =  Time.past;
+                }
+                else {
+                    currentTime = Time.present;
+                }
+            }
+            chrono -= UnityEngine.Time.deltaTime;
         }
-    }
     }
 
     private void ChangeTime(Time newTime) {
@@ -57,13 +78,13 @@ public class TimeManager : MonoBehaviour {
 
         switch(_currentTime) {
             case Time.present :
-                hero.layer = PRESENT_LAYER;
+                if(!free) hero.layer = PRESENT_LAYER;
                 audio_past.volume = 0f;
                 audio_present.volume = 1f;
                 break;
                 
             case Time.past : 
-                hero.layer = PAST_LAYER;
+                if(!free) hero.layer = PAST_LAYER;
                 audio_past.volume = 1f;
                 audio_present.volume = 0f;
                 break;
