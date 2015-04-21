@@ -13,5 +13,8 @@ public class Intro : MonoBehaviour {
 	if(GetComponent<Animator>().GetBool("end")) {
         Application.LoadLevel("1 - Forest");
     }
+     if (Input.GetKeyUp(KeyCode.Escape)) {
+                Application.LoadLevel("1 - Forest");
+            }
 	}
 }

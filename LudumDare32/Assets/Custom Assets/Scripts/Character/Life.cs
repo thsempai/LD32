@@ -12,6 +12,7 @@ public class Life : MonoBehaviour {
     public Vector2 damageVelocity = new Vector2();
     public bool dead = false;
     public float time = 0.5f;
+    public float secondTime = 3f;
 
     void Start () {
     
@@ -28,9 +29,15 @@ public class Life : MonoBehaviour {
                 Application.LoadLevel("GameOver");
             }
         }
+        if(secondTime!=3f) {
+        secondTime -= Time.deltaTime;
+        if(secondTime<=0f)secondTime=3f;
+        }
     }
 
     public void Damage(int damage) {
+        if(secondTime == 3f) {
+            secondTime = 2f;
         life -= damage;
         float x = damageVelocity.x;
         if(GetComponent<Rigidbody2D>().velocity.x < 0f) {
@@ -41,6 +48,8 @@ public class Life : MonoBehaviour {
         if(life <= 0) {
             Kill();
         }
+        }
+
     }
 
     public void Kill() {
